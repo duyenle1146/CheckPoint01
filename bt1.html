@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt1.css">
+</head>
+<body>
+    <script>
+        function tinhGiaiThua() {
+            const n = parseInt(document.getElementById('numberInput').value);
+            if (isNaN(n) || n < 0) {
+                document.getElementById('result').textContent = 'Vui lòng nhập một số tự nhiên không âm.';
+                return;
+            }
+            let giaiThua = 1;
+            for (let i = 1; i <= n; i++) {
+                giaiThua *= i;
+            }
+            document.getElementById('result').textContent = `Giai thừa của ${n} = ${giaiThua}`;
+        }
+    </script>
+    <body>
+        <div class="giaithua">
+            <h1>Tính Giai Thừa</h1>
+        <div class="tinh">
+            <labe for="numberInput">Nhập một số tự nhiên:</labe>
+            <input type="number" id="numberInput" min="0" />
+            <button onclick="tinhGiaiThua()">Tính</button>
+        <p id="result"></p>
+        </div>
+        </div>
+    </body>
+</body>
+</html>

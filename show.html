@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show.html</title>
+    <link rel="stylesheet" href="bt3.css">
+    <link rel="stylesheet" href="bt3.html">
+</head><script>
+    window.onload = function() {
+        const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+        if (userInfo) {
+            document.getElementById('name').textContent = 'Tên: ' + userInfo.name;
+            document.getElementById('age').textContent = 'Tuổi: ' + userInfo.age;
+            document.getElementById('email').textContent = 'Email: ' + userInfo.email;
+            document.getElementById('gender').textContent = 'Giới tính: ' + userInfo.gender;
+        } 
+    };
+</script>
+<body>
+    <div class="container">
+        <h1>Thông tin của bạn</h1>
+        <div class="thongtin">
+            <p id="name">Tên: </p>
+        <p id="age">Tuổi: </p>
+        <p id="email">Email: </p>
+        <p id="gender">Giới tính</p>
+        </div>
+    </div>
+</body>
+</html>

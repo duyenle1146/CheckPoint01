@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const readline = require("readline");
+
+    const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+function drawHollowTriangle(n) {
+for (let i = 1; i <= n; i++) {
+    let spaces = ' '.repeat(n - i);
+    if (i === 1) {
+        console.log(spaces + '*' + spaces); 
+    } else if (i === n) {
+        console.log('*'.repeat(2 * n - 1)); 
+    } else {
+        let innerSpaces = ' '.repeat(2 * i - 3);
+        console.log(spaces + '*' + innerSpaces + '*' + spaces); 
+    }
+}
+}
+
+rl.question('Nhập số dòng n: ', (n) => {
+n = parseInt(n);
+if (isNaN(n) || n <= 0) {
+    console.log('Vui lòng nhập một số tự nhiên lớn hơn 0.');
+} else {
+    drawHollowTriangle(n);
+}
+rl.close();
+});
+</script>
+<body>
+    
+</body>
+</html>

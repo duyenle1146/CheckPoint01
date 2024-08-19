@@ -1,0 +1,17 @@
+.giaithua{
+    background-color:rgb(178, 179, 119);
+    text-align: center;
+    width: 470px;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 20px;
+    height: 210px;
+}
+.tinh{
+    background-color:rgb(210, 209, 128);
+    width: 470px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1px;
+    height: 30px;
+}

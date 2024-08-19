@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register.html</title>
+    <link rel="stylesheet" href="bt3.css">
+    <link rel="stylesheet" href="show.html">
+</head>
+<script>
+    function register() {
+        const name = document.getElementById('name').value;
+        const age = document.getElementById('age').value;
+        const email = document.getElementById('email').value;
+        const gender = document.getElementById('gender').value;
+        if (name && age && email && gender) {
+            const userInfo = {
+                name: name,
+                age: age,
+                email: email,
+                gender: gender
+            };
+            localStorage.setItem('userInfo', JSON.stringify(userInfo));
+            alert('Đã đăng ký!');
+            window.location.href = 'show.html';
+        } 
+        else {
+            alert('Hãy điền đầy đủ thông tin.');
+        }
+    }
+</script>
+<body>
+    <div class="re">
+    <h1>Register Form</h1>
+   <div class="gioithieu">
+    <input type="text" id="name" class="gt" placeholder="Nhập tên"><br><br>
+    <input type="text" id="email" class="gt" placeholder="Nhập Email"><br><br>
+    <input type="text" id="age" class="gt" placeholder="dd/mm/yyyy"><br><br>
+    Gender:
+    <select class="gender1" id="gender">
+        <option placeholder="Gender"></option>
+        <option>Nam</option>
+        <option>Nữ</option>
+    </select> <br><br>
+    <button onclick="register()" class="đn">Register</button>
+   </div>
+    </div>
+</body>
+</html>

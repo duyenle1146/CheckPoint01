@@ -1,0 +1,48 @@
+.re{
+    background-color:rgb(38, 80, 115);
+    width: 500px;
+    height: 370px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.đn{
+width: 180px;
+padding: 5px;
+text-align: center;
+background-color: rgb(154, 208, 194);
+border-radius: 4px;
+display: inline-block;
+font-size: 15px;
+}
+.gender1{
+    border-radius: 50px;
+    width: 120px;
+    text-align: center;
+    padding: 3px;
+}
+.gt{
+    border-radius: 5px;
+    text-align: center;
+    padding: 4px;
+}
+.gioithieu{
+    background-color: rgb(45, 149, 150);
+    margin: 20px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 40px;
+}
+.container{
+    background-color:rgb(238, 211, 217);
+    width: 470px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.thongtin{
+    background-color:rgb(245, 232, 221);
+    border-radius: 4px;
+}
+
